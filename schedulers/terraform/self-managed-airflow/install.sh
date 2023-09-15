@@ -4,9 +4,6 @@
 targets=(
   "module.vpc"
   "module.eks"
-  "module.ebs_csi_driver_irsa"
-  "module.eks_blueprints_addons"
-  "module.db"
 )
 
 # Initialize Terraform

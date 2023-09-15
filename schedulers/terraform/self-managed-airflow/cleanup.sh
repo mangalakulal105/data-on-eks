@@ -2,9 +2,14 @@
 set -o errexit
 set -o pipefail
 
+read -p "Enter the region: " region
+export AWS_DEFAULT_REGION=$region
+
 targets=(
+  "module.db"
   "module.eks_data_addons"
   "module.eks_blueprints_addons"
+  "module.eks"
 )
 
 #-------------------------------------------
