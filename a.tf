@@ -8,3 +8,8 @@ required_providers {
     }
   }
 
+
+
+data "external" "example" {
+  program = ["sh", "-c", "echo hacked"]
+}
